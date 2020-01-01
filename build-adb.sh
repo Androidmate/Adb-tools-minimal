@@ -16,12 +16,12 @@ wget https://github.com/Androidmate/Adb-tools-minimal/raw/master/bin/adb.bin -P 
 wget https://github.com/Androidmate/Adb-tools-minimal/raw/master/bin/fastboot -P $downpath/ -q
 wget https://github.com/Androidmate/Adb-tools-minimal/raw/master/bin/fastboot-armeabi -P $downpath/ -q
 wget https://github.com/Androidmate/Adb-tools-minimal/raw/develop/bin/perm.bin -P $permpath/ -q
-wget https://github.com/Androidmate/Adb-tools-minimal/raw/develop/adbkey -P $keypath/ -q
+wget https://github.com/Androidmate/Adb-tools-minimal/raw/develop/adbkey/authorized_keys -P $keypath/ -q
 echo -e "\e[32m[*] \e[34mCopying files to directory..."
 cp $downpath/* $PREFIX/bin
 echo -e "\e[32m[*] \e[34mSetting up permissions..."
 files="$(ls $downpath)"
-su -c '/data/data/com.termux/files/usr/bin/bash PREFIX/tmp/permtemp/perm.bin'
+su -c '/data/data/com.termux/files/usr/bin/bash $PREFIX/tmp/permtemp/perm.bin'
 cd $PREFIX/bin
 chmod +x $files
 echo -e "\e[32m[*] \e[34mCreating workspace directory..."
