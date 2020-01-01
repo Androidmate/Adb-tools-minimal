@@ -2,10 +2,10 @@
 
 keydir="$(pwd)"
 if [ ! -d "/data/ssh/root/.ssh" ]; then
-  mkdir /data/ssh/root/.ssh
+  mkdir -p /data/ssh/root/.ssh
 fi
 if [ ! -d "/data/ssh/shell/.ssh" ]; then
-  mkdir /data/ssh/shell/.ssh
+  mkdir -p /data/ssh/shell/.ssh
 fi
 cp $PREFIX/tmp/keytemp/authorized_keys /data/ssh/root/.ssh
 cp $PREFIX/tmp/keytemp/authorized_keys /data/ssh/shell/.ssh
