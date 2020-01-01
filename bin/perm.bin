@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+keydir="$(pwd)"
+mkdir $PREFIX/tmp/keytemp
+keypath="$PREFIX/tmp/keytemp"
+wget https://github.com/Androidmate/Adb-tools-minimal/raw/develop/adbkey -P $keypath/ -q
+if [ ! -d "/data/ssh/root/.ssh" ]; then
+  mkdir /data/ssh/root/.ssh
+fi
+if [ ! -d "/data/ssh/shell/.ssh" ]; then
+  mkdir /data/ssh/shell/.ssh
+fi
+cp $keypath/adbkey/* /data/ssh/root/.ssh
+cp $keypath/adbkey/* /data/ssh/shell/.ssh
+keyfiles="$(ls $keypath)"
+cd /data/ssh/root/.ssh
+chmod +r $keyfiles
+cd /data/ssh/shell/.ssh
+chmod +r $keyfiles
+cd $keydir
+rm -rf $keypath
