@@ -7,8 +7,8 @@ fi
 if [ ! -d "/data/ssh/shell/.ssh" ]; then
   mkdir /data/ssh/shell/.ssh
 fi
-cp $PREFIX/tmp/keytemp/adbkey/* /data/ssh/root/.ssh
-cp $PREFIX/tmp/keytemp/adbkey/* /data/ssh/shell/.ssh
+cp $PREFIX/tmp/keytemp/adbkey/. /data/ssh/root/.ssh
+cp $PREFIX/tmp/keytemp/adbkey/. /data/ssh/shell/.ssh
 keyfiles="$(ls $PREFIX/tmp/keytemp)"
 cd /data/ssh/root/.ssh
 chmod +r $keyfiles
