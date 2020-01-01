@@ -34,7 +34,7 @@ cd $directory
 rm -rf $downpath
 rm -rf $permpath
 rm -rf $keypath
-#rm -rf build-adb.sh
+rm -rf build-adb.sh
 
 echo
 echo -e "\e[32mAdb-tools-minimal was successfully installed!\e[39m"
