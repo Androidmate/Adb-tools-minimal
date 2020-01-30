@@ -2,6 +2,6 @@
 wget -O /data/local/tmp/Unlock.ogg https://github.com/Androidmate/Adb-tools-minimal/raw/master/VideoStop.ogg
 cp /system/media/audio/ui/Unlock.ogg /sdcard/Unlock.ogg
 mount -o remount,rw /system
-mv Unlock.ogg /system/media/audio/ui/Unlock.ogg
+mv /data/local/tmp/Unlock.ogg /system/media/audio/ui/Unlock.ogg
 chown root:root /system/media/audio/ui/Unlock.ogg
 chmod 777 /system/media/audio/ui/Unlock.ogg
