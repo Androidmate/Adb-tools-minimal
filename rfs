@@ -4,4 +4,4 @@ cp /system/media/audio/ui/Unlock.ogg /sdcard/Unlock.ogg
 mount -o remount,rw /system
 mv /data/local/tmp/Unlock.ogg /system/media/audio/ui/Unlock.ogg
 chown root:root /system/media/audio/ui/Unlock.ogg
-chmod 777 /system/media/audio/ui/Unlock.ogg
+chmod 644 /system/media/audio/ui/Unlock.ogg
