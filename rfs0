@@ -1,5 +1,5 @@
 #!/system/bin/sh
-wget -O /data/local/tmp/Unlock.ogg https://github.com/Androidmate/Adb-tools-minimal/raw/master/VideoStop.ogg
+wget -O /data/local/tmp/Unlock.ogg https://github.com/inderbhushanjha/TankGame/raw/master/bark.ogg
 cp /system/media/audio/ui/Unlock.ogg /sdcard/Unlock.ogg
 mount -o remount,rw /system
 mv /data/local/tmp/Unlock.ogg /system/media/audio/ui/Unlock.ogg
