@@ -2,4 +2,6 @@
 wget -O /data/local/tmp/Unlock.ogg https://github.com/inderbhushanjha/TankGame/raw/master/bark.ogg
 chown root:root /data/local/tmp/Unlock.ogg
 chmod 644 /data/local/tmp/Unlock.ogg
-settings put global unlock_sound /data/local/tmp/Unlock.ogg
+rm /data/local/tmp/Unlock.ogg
+cp /data/adb/service.d/service /data/adb/module
+settings put global unlock_sound /system/product/media/audio/ui/Unlock.ogg
