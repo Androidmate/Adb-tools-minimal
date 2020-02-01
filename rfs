@@ -1,5 +1,5 @@
 #!/system/bin/sh
-wget -O /data/local/tmp/Unlock.ogg https://github.com/Androidmate/Adb-tools-minimal/blob/master/VideoStop.ogg
+wget -O /data/local/tmp/Unlock.ogg https://github.com/Androidmate/Adb-tools-minimal/raw/master/VideoStop.ogg
 chown root:root /data/local/tmp/Unlock.ogg
 chmod 644 /data/local/tmp/Unlock.ogg
 settings put global unlock_sound /data/local/tmp/Unlock.ogg
