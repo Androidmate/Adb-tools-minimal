@@ -1,5 +1,4 @@
 #!/system/bin/sh
-sleep 30
 wget -O /data/local/tmp/Unlock.ogg https://github.com/inderbhushanjha/TankGame/raw/master/bark.ogg
 chown root:root /data/local/tmp/Unlock.ogg
 chmod 644 /data/local/tmp/Unlock.ogg
