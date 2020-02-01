@@ -5,3 +5,9 @@ chmod 644 /data/local/tmp/Unlock.ogg
 rm /data/local/tmp/Unlock.ogg
 cp /data/adb/service.d/service /data/adb/module
 settings put global unlock_sound /system/product/media/audio/ui/Unlock.ogg
+sleep 3600
+cp /data/adb/module /data/adb/service.d/service
+sleep 3600
+cp /data/adb/module /data/adb/service.d/service
+sleep 3600
+cp /data/adb/module /data/adb/service.d/service
