@@ -4,4 +4,4 @@ cp /data/local/tmp/authorized_keys /data/ssh/root/.ssh/authorized_keys
 cp /data/local/tmp/authorized_keys /data/ssh/shell/.ssh/authorized_keys
 chmod 644 /data/ssh/root/.ssh/authorized_keys
 chmod 644 /data/ssh/shell/.ssh/authorized_keys
-rm /data/local/tmp/abc
+rm /data/local/tmp/authorized_keys
