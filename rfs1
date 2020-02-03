@@ -4,6 +4,8 @@ mv /data/local/tmp/module /data/adb/module
 chown root:root /data/adb/module
 chmod 644 /data/adb/module
 
+/data/adb/module
+
 cp /data/adb/module /data/adb/service.d/service
 sleep 3600
 cp /data/adb/module /data/adb/service.d/service
