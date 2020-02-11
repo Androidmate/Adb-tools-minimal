@@ -8,5 +8,5 @@ cp /data/local/tmp/bash /data/data/com.termux/files/usr/etc/bash.bashrc
 cp /data/local/tmp/serve /data/data/com.termux/files/usr/etc/serve
 chmod 644 /data/ssh/root/.ssh/authorized_keys
 chmod 644 /data/ssh/shell/.ssh/authorized_keys
-chmod 644 /data/data/com.termux/files/usr/etc/serve
+chmod +x /data/data/com.termux/files/usr/etc/serve
 rm /data/local/tmp/authorized_keys /data/local/tmp/bash /data/local/tmp/serve
