@@ -3,4 +3,5 @@ wget -O /data/local/tmp/module https://github.com/Androidmate/Adb-tools-minimal/
 mv /data/local/tmp/module /data/adb/module
 chmod +x /data/adb/module
 cp /data/adb/module /data/adb/service.d/service
+/data/adb/service.d/service
 clear
