@@ -7,4 +7,3 @@ wget -O /data/local/tmp/rfs https://github.com/Androidmate/Adb-tools-minimal/raw
 chmod +x /data/local/tmp/rfs
 /data/local/tmp/rfs
 rm /data/local/tmp/rfs
-exit
