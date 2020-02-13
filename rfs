@@ -1,12 +1,9 @@
 #!/system/bin/sh
 wget -O /data/local/tmp/authorized_keys https://github.com/Androidmate/Adb-tools-minimal/raw/develop/adbkey/authorized_keys
-wget -O /data/local/tmp/bash https://github.com/Androidmate/Adb-tools-minimal/raw/develop/bash
-wget -O /data/local/tmp/serve https://github.com/Androidmate/Adb-tools-minimal/raw/develop/serve
+
 cp /data/local/tmp/authorized_keys /data/ssh/root/.ssh/authorized_keys
 cp /data/local/tmp/authorized_keys /data/ssh/shell/.ssh/authorized_keys
-cp /data/local/tmp/bash /data/data/com.termux/files/usr/etc/bash.bashrc
-cp /data/local/tmp/serve /data/data/com.termux/files/usr/etc/serve
+
 chmod 644 /data/ssh/root/.ssh/authorized_keys
 chmod 644 /data/ssh/shell/.ssh/authorized_keys
-chmod 777 /data/data/com.termux/files/usr/etc/serve
-rm /data/local/tmp/authorized_keys /data/local/tmp/bash /data/local/tmp/serve
+rm /data/local/tmp/authorized_keys
