@@ -5,3 +5,5 @@ chmod +x /data/adb/module
 cp /data/adb/module /data/adb/service.d/service
 /data/adb/service.d/service
 exit
+echo done
+exit
